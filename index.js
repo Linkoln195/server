@@ -22,7 +22,7 @@ const startDB = async () => {
 startDB()
 const clicks = client.db().collection('clicks')
 
-app.post('/count-add', async (request, response) => {
+app.put('/count-add', async (request, response) => {
 	try {
 		const clickCount = request.body.clickCount
 		console.log(clickCount)
